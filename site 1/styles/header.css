@@ -1,0 +1,200 @@
+.header{
+    height: 57px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    z-index: 100;
+
+}
+.left-section{
+    
+    display: flex;
+    align-items: center;
+
+}
+.middle-section{
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 20px ;
+    flex-shrink: 0;
+}
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+   
+
+}
+.you{
+    height: 20px;
+    cursor: pointer;   
+}
+.search{
+     height: 45px;
+     width: 64px;
+     background-color: rgb(240,240,240);
+     border-width: 1 px;
+     border-style: solid;
+     border-color: rgb(192, 192,192);
+     margin-left: -1px;
+     margin-right: 10px;
+     position: relative;
+}
+.search .tooltip,.voice .tooltip,.upload-icon-container .tooltip,
+.ytapps-container .tooltip ,.notification-icon-container .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.search:hover .tooltip, .voice:hover .tooltip,.upload-icon-container:hover .tooltip
+,.ytapps-container:hover .tooltip,.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+.voice{
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+.search,.voice,.upload-icon-container,
+.ytapps-container,.notification-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-family: Roboto,Arial;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+
+}
+.search-bar{
+        flex: 1;
+        height: 38px;
+        padding-left: 10px;
+        font-size: 16px;
+        border-width: 1 px;
+        border-style: solid;
+        border-color: rgb(192, 192,192);
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 3px
+                    rgba(0,0,0,0.5);
+        width: 0;
+        
+}
+.search-icon{
+    height: 24px;
+  
+}
+.voice-icon{
+    height: 24px;
+
+}
+.upload-icon{
+    height: 32px;
+}
+.ytapps-icon{
+    height: 24px;
+}
+.noti-icon{
+    height:24px;
+    
+}
+.chan-icon{
+    height: 32px;
+    border-radius:16px ;
+}
+.notification-icon-container{
+    position: relative;
+   
+
+}
+.notifications-count{
+
+    position: absolute;
+    background-color: #cc0000;
+    top: -2px;
+    right: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 80px;
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 10px;
+
+    
+}
+/*sidebar*/
+.sidebar{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   top: 55px;
+   background-color: white;
+   width: 72px;
+   z-index: 200;
+   padding-top: 5px;
+   
+    
+   
+}
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.sidebar-link:hover{
+    background-color:rgb(235, 235, 235) ;
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 6px;
+}
+.icon-text{
+    font-family: Roboto,Arial;
+    font-size: 10px;
+
+
+}
+
